@@ -1,0 +1,357 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Cumpleaños y San Valentín</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Marck+Script&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('imagenes/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    #pantallaInicio {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; /* Fondo blanco y opaco, sin transparencia */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+      animation: aparecer 1.5s ease;
+    }
+
+    #botonEntrar {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff66cc;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    #botonEntrar:hover {
+      transform: scale(1.1);
+    }
+
+    .seccion {
+      display: none;
+      padding: 30px;
+      min-height: 100vh;
+      animation: aparecer 2s ease;
+    }
+
+    .activa {
+      display: block;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pantalla de entrada -->
+  <div id="pantallaInicio">
+    <h1 style="color: #cc0066;">Bienvenida, Mi Amorcito 💖</h1>
+    <p style="color: #333;">Este es tu lugar secreto...</p>
+    <button id="botonEntrar">Entrar</button>
+  </div>
+
+  <!-- Audio global -->
+  <audio id="miAudio" src="C:\Users\fache\Downloads\LA NUBE EN EL JARDÍN.mp3" type="audio/mpeg"></audio>
+
+  <!-- Sección 2: Carta principal -->
+  <style>
+    .boton-siguiente {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    section {
+      padding: 20px;
+    }
+  </style>
+
+  <!-- Parte 1: -->
+  <section id="parte1">
+    <div class="confeti" id="confeti"></div>
+    <header>
+      <h1>Feliz Cumpleaños, Chelss 🎉</h1>
+      <p class="subtitulo">Espero y te guste. 🌸</p>
+    </header>
+
+    <div class="poema">
+      <h2>🌷 Para la chica que me enamoró 🌷</h2>
+      <p><em>Para querida y dulce esposa.</em></p>
+        
+        <p>Eres la brisa que me envuelve,<br>
+        el perfume que se queda en mis manos.<br>
+        Una presencia que desborda mi mente,<br>
+        un deseo que atraviesa los años.<br>
+        Tu estilo, mezcla de arte y misterio,<br>
+        es como un lienzo que nunca quiero dejar de admirar,<br>
+        y en cada mirada tuya, siento que me pierdo<br>
+        en el profundo azul de tu alma, en su paz sin igual.</p>
+
+        <p>Tu piel es como la luna<br>
+        en su máxima expresión de belleza,<br>
+        y tu mirada, profunda y tranquila,<br>
+        se convierte en mi única certeza.<br>
+        Como una orquídea en su plenitud,<br>
+        tu fragancia me atrapa sin quererlo,<br>
+        y con cada roce de tus manos,<br>
+        mi mundo, en un instante, se vuelve perfecto.</p>
+
+        <p>Te pienso sin quererlo,<br>
+        y el mundo pierde su sentido,<br>
+        porque en cada pensamiento tuyo<br>
+        mi alma se siente consumida y rendida.<br>
+        Tus palabras, suaves y llenas de ternura,<br>
+        son mi refugio y mi adicción,<br>
+        y tu voz, como un susurro que calma,<br>
+        se convierte en mi canción.</p>
+
+        <p>Tu cuerpo se mueve con gracia,<br>
+        como la danza de un suspiro,<br>
+        y cada gesto, cada rincón,<br>
+        me invita a perderme en tu ritmo.<br>
+        Eres mi sol en la mañana,<br>
+        mi luna en la oscuridad,<br>
+        mi razón para creer en la magia<br>
+        y el sueño que quiero hacer realidad.</p>
+
+        <p>No eres una simple idea<br>
+        ni un sueño pasajero,<br>
+        eres la realidad que hace que mi pecho<br>
+        late más fuerte, con un amor sincero.<br>
+        Y cuando miras hacia mí,<br>
+        el mundo desaparece a tu lado,<br>
+        porque en esos ojos tuyos<br>
+        se esconde todo lo que he deseado.</p>
+
+        <p>Eres la musa que inspira mi verso,<br>
+        la melodía que me canta el viento,<br>
+        y en cada latido siento tu esencia,<br>
+        como un fuego ardiente, inmenso y cierto.<br>
+        Tu amor es el fuego que avivamos juntos,<br>
+        y tu fuerza, la que me empuja a ser mejor.<br>
+        Porque tenerte a ti, mi amor,<br>
+        es lo más cercano a la perfección.</p>
+
+        <p>No te necesito en fragmentos,<br>
+        ni en pedazos rotos de mi ser,<br>
+        te quiero entera, completa,<br>
+        como el sol necesita al amanecer.<br>
+        Eres mi razón, mi vida, mi amor,<br>
+        y en este mundo no hay nada más<br>
+        que desee con tanta intensidad<br>
+        como el amarte, siempre, sin final.</p>
+
+        <p class="autor">Con todo mi amor,<br><span>Engelvert</span></p>
+
+    <div class="enlace-musica">
+      <p>Presiona el botón para escuchar tu música en mp3 o descargarla🎶</p>
+      <a href="https://drive.google.com/file/d/1SssVun2ipVSPtQHlKc4dgFLSR5ThVL_d/view" target="_blank">Escuchar en mi Google Drive</a>
+    </div>
+
+    <button class="boton-siguiente" onclick="mostrarParte('parte2')">Ver siguiente sorpresa 💌</button>
+  </section>
+
+  <!-- Parte 2: San Valentín -->
+  <section id="parte2" style="display: none;">
+    <h1>¡Feliz Cumpleaños! ❤️</h1>
+    <div class="contenedor">
+      <div class="envoltura-sobre">
+        <div class="sobre">
+          <div class="carta">
+            <div class="contenido">
+              <strong>Mi querida ❤️</strong>
+              <p>
+                Hoy no es un día cualquiera… es un día especial porque me recuerda que estás en mi vida, que existes, que sonríes, que respiras cerca de mí, y que tengo la suerte de llamarte mi esposa.
+              </p>
+              <p>
+                Amor, desde ya quiero desearte un día hermoso, espero que todo lo bueno te rodee, porque te mereces lo mejor de este mundo y más. Si pudiera regalarte el universo entero, lo haría sin pensarlo, no porque lo necesites, sino porque lo mereces todo.
+              </p>
+              <p>
+                Si te llevara hasta las estrellas, aún así no alcanzarían para mostrarte cuánto amor siento por ti, es inmenso, real, profundo y puro, a veces no sé cómo explicarlo, pero sí sé que me haces sentir vivo, que tu mirada me calma y me enciende al mismo tiempo, que tu presencia lo cambia todo.
+              </p>
+              <p>
+                Eres hermosa en todos los sentidos, desde tu forma de hablar, de mirar, de reír… hasta cómo haces que me sienta completo y me encanta, te deseo y te admiro. No solo físicamente (aunque también), sino por todo lo que eres, completamente única.
+              </p>
+              <p>
+                Quiero pasar cada uno de tus cumpleaños contigo, no me imagino celebrarte de lejos, quiero estar ahí, abrazarte fuerte, llenarte de besos y hacerte sentir especial todos los días, no solo hoy.
+              </p>
+              <p>
+                Y sí, lo del regalo de “comerte” en tu cumpleaños me sale con picardía, pero va más allá, es porque te deseo, porque me atraes, porque me encantas. Pero sobre todo, porque quiero que sientas lo mucho que te amo, en cuerpo y alma, sin que te falte nada.
+              </p>
+              <p>
+                Y si en algún momento me necesitas,dímelo sin miedo, estoy aquí, siempre, para ti, no importa cuándo ni cómo, voy a estarlo para ti, porque eso es lo que quiero: cuidarte, apoyarte, hacerte reír y que nunca te falte amor.
+              </p>
+              <p>
+                <strong>Feliz Cumpleaños, mi amor ❤️</strong>, mi esposa. Gracias por existir, por ser como eres, por dejarme amarte.<br />
+                Con todo mi corazón,<br />
+                Tu esposo Engelvert.<br />
+              </p>
+                           
+            </div>
+          </div>
+        </div>
+        <div class="corazon"></div>
+        <div class="solapa-derecha"></div>
+        <div class="solapa-izquierda"></div>
+      </div>
+    </div>
+    <button class="boton-siguiente" onclick="mostrarParte('parte3')">Ver siguiente sorpresa 📷</button>
+  </section>
+
+  <!-- Parte 3: Galería de fotos vintage -->
+  <section id="parte3" style="display: none;">
+    <h1 style="color: black; font-size: 50px;">Nuestra mini galería, amorcito 📸</h1>
+    <h2 style="color: black; font-size: 36px;">Haz click en las fotos </h1>
+    <div class="marco">
+  
+      <div class="flip-card foto1">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img1.jpeg" alt="Foto 1">
+          </div>
+          <div class="flip-back">Un recuerdo especial y único.💫</div>
+        </div>
+      </div>
+  
+      <div class="flip-card foto2">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img2.jpeg" alt="Foto 2">
+          </div>
+          <div class="flip-back">Tu belleza no necesita adornos, porque tu alma radia más que cualquier luz. 🌹✨💖</div>
+        </div>
+      </div>
+  
+      <div class="flip-card foto3">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img3.png" alt="Foto 3">
+          </div>
+          <div class="flip-back">Cada momento contigo es un regalo que guardo en lo más profundo de mi ser. 🎁🌙💫</div>
+        </div>
+      </div>
+  
+      <div class="flip-card foto4">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img4.png" alt="Foto 4">
+          </div>
+          <div class="flip-back">Desde el primer instante, supe que mi vida sería tuya para siempre. 💫❤️</div>
+        </div>
+      </div>
+  
+      <div class="flip-card foto5">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img5.jpeg" alt="Foto 5">
+          </div>
+          <div class="flip-back">Cada parte de ti es un sueño hecho realidad, una belleza que no deja de deslumbrarme. 💕🌟</div>
+        </div>
+      </div>
+  
+      <div class="flip-card foto6">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="Imagenes/img6.png" alt="Foto 6">
+          </div>
+          <div class="flip-back">Contigo todo es arte. 🎨</div>
+        </div>
+      </div>
+  
+    </div>
+    <button class="boton-siguiente" onclick="mostrarParte('parte1')">Volver al inicio 🎂</button>
+  </section>
+  
+  <!-- Scripts y funciones dinámicas -->
+  <script>
+    function mostrarParte(id) {
+      document.getElementById('pantallaInicio').style.display = 'none'; 
+      document.getElementById('parte1').style.display = 'none';
+      document.getElementById('parte2').style.display = 'none';
+      document.getElementById('parte3').style.display = 'none';
+      eliminarRecursosDinamicos();
+
+      if (id === 'parte1') {
+        cargarEstilo('style1.css');
+        cargarScript('script._v1.js');
+      } else if (id === 'parte2') {
+        cargarEstilo('style2.css');
+        cargarScript('script._v2.js');
+        cargarScript('script._v3.js');
+      } else if (id === 'parte3') {
+        cargarEstilo('style3.css');
+        cargarScript('script._v4.js');  
+      }
+
+      document.getElementById(id).style.display = 'block';
+      reproducirMusica(); 
+    }
+
+    function cargarEstilo(href) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.className = 'dinamico';
+      document.head.appendChild(link);
+    }
+
+    function cargarScript(src) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.className = 'dinamico';
+      document.body.appendChild(script);
+    }
+
+    function eliminarRecursosDinamicos() {
+      const dinamicos = document.querySelectorAll('.dinamico');
+      dinamicos.forEach(el => el.remove());
+    }
+
+    function reproducirMusica() {
+      const miAudio = document.getElementById('miAudio');
+      if (miAudio) miAudio.play();
+    }
+
+    document.getElementById('botonEntrar').addEventListener('click', function() {
+      mostrarParte('parte1');
+      reproducirMusica();
+    });
+  </script>
+</body>
+</html>

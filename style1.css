@@ -1,0 +1,85 @@
+body {
+  background-image: url('https://i.pinimg.com/originals/f5/fb/c2/f5fbc23284e90093cdf58959ec044b12.jpg');
+  background-size: 150px;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  color: #4b004b;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(255, 182, 193, 0.85);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.poema {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.poema h2 {
+  color: #b03060;
+  margin-bottom: 20px;
+}
+
+.enlace-musica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.enlace-musica p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.enlace-musica a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.enlace-musica a:hover {
+  background-color: #d4509e;
+  transform: scale(1.05);
+}
+
+#confeti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
